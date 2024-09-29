@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bagianprofil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fotoprofil {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+video{
+    width: 50%;
+}
