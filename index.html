@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Ini adalah elemen utama yang membungkus seluruh halaman web. Kita juga kasih atribut lang="en" karena isinya berbahasa Inggris -->
+
+<head>
+    <!-- Bagian <head> ini untuk informasi meta dan resource yang dibutuhkan halaman -->
+    <meta charset="UTF-8">
+    <!-- Kita pakai UTF-8 biar semua karakter teks, termasuk simbol dan huruf non-Latin, bisa tampil dengan benar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ini untuk memastikan halaman web bisa diakses dengan baik di berbagai ukuran layar, terutama di perangkat mobile -->
+    <title>TP3_Daffa Adjie Refanda_1303223127</title>
+    <!-- Ini judul yang nanti muncul di tab browser -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link ke file CSS eksternal supaya tampilan halaman lebih rapi dan enak dilihat -->
+</head>
+
+<body>
+    <!-- Mulai bagian <body>, semua konten yang bisa dilihat user akan ada di sini -->
+
+    <h1>Data Diri Mahasiswa</h1>
+    <!-- <h1> ini untuk judul utama halaman. Sebaiknya hanya ada satu <h1> di setiap halaman untuk SEO yang baik -->
+
+    <div class="bagianprofil">
+        <!-- Ini div untuk menampung bagian profil, biar konten lebih terstruktur -->
+
+        <img src="profil.jpeg" alt="foto saya" class="fotoprofil">
+        <!-- <img> buat nampilin gambar profil, jangan lupa pakai alt text, penting buat aksesibilitas (kalau gambar nggak tampil) -->
+
+        <div class="info">
+            <!-- Div ini untuk info text di bagian profil -->
+            <p>Nama: Daffa Adjie Refanda</p>
+            <p>Kelas: IT-46-04</p>
+            <p>NIM: 1303223127</p>
+            <!-- Masing-masing info pakai <p>, ini untuk paragraf yang rapi dan terpisah -->
+        </div>
+    </div>
+
+    <h2>Tentang Saya</h2>
+    <!-- <h2> ini untuk sub-judul, biasanya digunakan untuk hierarki di bawah <h1> -->
+
+    <p>Halo perkenalkan, nama saya Daffa Adjie Refanda. Saya adalah seorang mahasiswa semester 5 di jurusan
+        teknologi informasi Telkom University</p>
+    <!-- Paragraf untuk teks perkenalan singkat -->
+
+    <h2>Video Perkenalan</h2>
+    <!-- Sub-judul lagi, kali ini tentang video perkenalan -->
+
+    <video src="perkenalan.mp4" controls></video>
+    <!-- <video> untuk menyisipkan video. 'controls' artinya user bisa play, pause, dll. -->
+
+    <h2>Keterampilan</h2>
+    <!-- Bagian ini buat menampilkan keterampilan yang dimiliki -->
+
+    <table border="1">
+        <!-- Kita pakai tabel untuk menampilkan skill. 'border="1"' buat tampilkan garis pinggir tabel -->
+
+        <thead>
+            <!-- Bagian <thead> ini khusus untuk header kolom tabel -->
+            <tr>
+                <!-- <tr> untuk buat satu baris di tabel -->
+                <th>Keterampilan</th>
+                <!-- <th> untuk header kolom, biasanya tampil tebal -->
+                <th>Tingkat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tbody> bagian ini untuk data isi tabel -->
+            <tr>
+                <td>HTML/CSS/JS</td>
+                <!-- <td> ini untuk sel (kotak) data -->
+                <td>Mahir</td>
+            </tr>
+            <tr>
+                <td>Golang</td>
+                <td>Menengah</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>Pemula</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Hubungi Saya</h2>
+    <!-- Bagian kontak, form buat orang yang mau kirim pesan -->
+
+    <form method="post">
+        <!-- Form ini pakai metode POST biar datanya dikirim ke server -->
+
+        <p>Nama: <input type="text" name="nama" required></p>
+        <!-- Input teks buat nama, 'required' artinya harus diisi, gak boleh kosong -->
+
+        <p>Email: <input type="email" name="email" required></p>
+        <!-- Input email, ini bakal cek format emailnya bener atau nggak -->
+
+        <p>Pesan:</p>
+        <p><textarea name="pesan" rows="5" cols="30" required></textarea></p>
+        <!-- Ini textarea buat pesan, bisa lebih panjang dari input biasa -->
+
+        <button type="submit">Kirim</button>
+        <!-- Tombol submit untuk mengirim form -->
+    </form>
+
+    <h2>Media Sosial</h2>
+    <!-- Daftar link ke media sosial -->
+
+    <ul>
+        <!-- List ini tidak berurutan, cocok untuk daftar media sosial -->
+        <li><a href="https://www.linkedin.com/in/daffa-adjie-refanda-78490827b?originalSubdomain=id">LinkedIn</a></li>
+        <!-- Link ke LinkedIn -->
+        <li><a href="https://github.com/rrxfanda">GitHub</a></li>
+        <!-- Link ke GitHub -->
+        <li><a href="https://instagram.com/refanda._">Instagram</a></li>
+        <!-- Link ke Instagram -->
+    </ul>
+</body>
+
+</html>
